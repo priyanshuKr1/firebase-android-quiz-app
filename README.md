@@ -58,3 +58,5 @@ Craete a child **admins** in root of realtime-database and copy the USER-UID fro
 To manage users marks, for not re-update of marks after giving tests, [database rules](Rules.txt) paste the contents to database-rules section.
 
 #### ![rules](Screenshots/ss25.png)
+
+#### Click this [link](https://drive.google.com/file/d/1ALvOO9Zzr-dw0JftxILlrzH3yj9cBDJP/view?usp=sharing) to view prototype
