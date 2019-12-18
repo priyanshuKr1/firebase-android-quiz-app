@@ -1,0 +1,32 @@
+
+  "rules": {
+    "users":{
+      ".read": "auth != null ",
+      "$uid": {
+      ".write": "auth != null && auth.uid == $uid",
+      ".read": "auth != null "
+     }
+    },
+    "tests":{
+      ".read": "auth != null",
+    	".write": "auth !=null",
+    },
+    "Results" : {
+      ".read": "auth != null",
+      "$child":{
+        "$uid": {
+      		".write": "auth != null && auth.uid == $uid &&(!data.exists() || !newData.exists()) && root.child('admins').child(auth.uid).val() == true",
+      		".read": "auth != null "
+     		}
+      }
+    },
+      "admins" :{
+        ".read":"auth!=null",
+          ".write":"auth != null && root.child('admins').child(auth.uid).val() == true"
+      },
+        "chat" : {
+          ".read": "auth != null",
+            ".write": "auth != null"
+        }
+  }
+}

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_test"
+            android:icon="@drawable/ic_test_icon"
+            android:font="@font/lato_black"
+            android:iconTint="@android:color/black"
+            android:title="Tests" />
+        <item
+            android:id="@+id/nav_result"
+            android:icon="@drawable/ranking"
+            android:font="@font/lato_black"
+            android:title="Results" />
+
+        <item
+            android:id="@+id/create_test"
+            android:icon="@android:drawable/ic_menu_add"
+            android:font="@font/lato_black"
+            android:visible="true"
+            android:title="Admin "/>
+    </group>
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_details"
+                android:icon="@drawable/ic_feedback_black_24dp"
+                android:font="@font/lato_black"
+                android:title="AddDetails" />
+            <item
+                android:id="@+id/nav_respass"
+                android:icon="@drawable/ic_vpn_key_black_24dp"
+                android:font="@font/lato_black"
+                android:title="ResetPassword" />
+            <item
+                android:id="@+id/nav_signout"
+                android:icon="@drawable/ic_menu_send"
+                android:font="@font/lato_black"
+                android:title="SignOut" />
+        </menu>
+    </item>
+    <item android:title="Info">
+        <menu>
+            <item
+                android:id="@+id/about_details"
+                android:icon="@drawable/ic_info_outline_white_24dp"
+                android:iconTint="@android:color/black"
+                android:font="@font/lato_black"
+                android:title="AboutUs" />
+            <item
+                android:id="@+id/feedback_id"
+                android:icon="@drawable/ic_feedback_black_24dp"
+                android:iconTint="@android:color/black"
+                android:font="@font/lato_black"
+                android:title="Give feedBack">
+            </item>
+        </menu>
+    </item>
+
+</menu>

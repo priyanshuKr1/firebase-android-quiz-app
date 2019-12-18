@@ -1,0 +1,53 @@
+<resources>
+    <string name="text">"Terms &amp; Conditions"</string>
+
+    <string name="app_name">Quizzer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="email_unverified">Email verification not done.Check your email.</string>
+    <string name="email_sent">Verification email is sent.Check your email.</string>
+    <string name="Welcome">Welcome back, User</string>
+    <string name="email">Email</string>
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_link_to_register">Sign-up now!</string>
+    <string name="btn_link_to_login">Already Member! Login</string>
+    <string name="btn_forgot_password">Forgot your password?</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="lbl_forgot_password">Forgot password?</string>
+    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="title_activity_tests">Tests</string>
+    <string name="Sign_in_login">Sign In</string>
+    <string name="e_mail_text_view_login">E-MAIL</string>
+    <string name="e_mail_text_view_pass">PASSWORD</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="Sign_in_signup">Sign Up</string>
+    <string name="action_sign_in_btn">sign-up</string>
+    <string name="title_activity_UPdate">Update Details</string>
+    <string-array name="College_Choice">
+        <item>A</item>
+        <item>B</item>
+    </string-array>
+    <string-array name="Branch_Choice">
+        <item>IT</item>
+        <item>ECE</item>
+        <item>DUAl(IT+ECE)</item>
+    </string-array>
+    <string-array name="Sem_Choice">
+        <item>I</item>
+        <item>II</item>
+        <item>III</item>
+        <item>IV</item>
+        <item>V</item>
+        <item>VI</item>
+        <item>VII</item>
+        <item>VIII</item>
+    </string-array>
+
+</resources>

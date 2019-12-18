@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="?android:attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.yarolegovich.discretescrollview.DiscreteScrollView
+                android:id="@+id/discrete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:dsv_orientation="horizontal" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+                    <Button
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_marginEnd="5dp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffff"
+                        android:layout_weight="1"
+                        android:id="@+id/prev"
+                        android:background="@drawable/circular_coloured_button"/>
+
+                    <Button
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffff"
+                        android:layout_weight="1"
+                        android:id="@+id/next"
+                        android:background="@drawable/circular_coloured_button"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:gravity="center_horizontal"
+            android:id="@+id/index_layout"
+            android:layout_marginTop="?android:attr/actionBarSize"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <GridView
+                android:id="@+id/pop_grid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numColumns="4">
+            </GridView>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

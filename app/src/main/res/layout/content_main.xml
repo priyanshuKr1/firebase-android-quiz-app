@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".View.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:layout_marginTop="?android:attr/actionBarSize">
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/li1"
+        android:layout_width="match_parent"
+        android:layout_height="288dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_gravity="center_horizontal|center"
+            android:background="@drawable/circular_card"
+            android:backgroundTint="@android:color/holo_blue_light">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/card1"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="25dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon1">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/text_user_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/lato_black"
+            android:padding="7dp"
+            android:gravity="center"
+            android:text="@string/Welcome"
+            android:textAllCaps="true"
+            android:textColor="@color/fui_bgGitHub"
+            android:textSize="15sp" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        app:layout_anchorGravity="bottom"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        app:layout_anchor="@id/li1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Recent Activities"
+            android:textColor="@android:color/holo_red_light"
+            android:fontFamily="@font/lato_black"
+            android:textSize="20sp">
+
+        </TextView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:id="@+id/recent_activity_list"
+            android:divider="@null"
+            android:dividerHeight="0dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/chatHead"
+        android:layout_marginEnd="17dp"
+        android:backgroundTint="#ffff"
+        android:src="@drawable/chat"
+        app:icon="@drawable/chat"
+        android:background="@drawable/circular_coloured_button"
+        android:tint="@android:color/black"
+        android:scaleType="center"
+        app:fabSize="normal"
+        app:maxImageSize="56dp"
+        android:elevation="10dp"
+        android:layout_gravity="bottom|end">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

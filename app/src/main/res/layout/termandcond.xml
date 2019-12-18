@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_dialog"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/bg_main"
+        android:layout_gravity="center"
+        android:fontFamily="@font/lato_black"
+        android:gravity="center_horizontal"
+        android:elevation="10dp"
+        android:text="@string/text">
+
+    </TextView>
+
+    <View
+        android:id="@+id/View2"
+        android:layout_width="120dp"
+        android:layout_height="7dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="#366ce0"
+        android:elevation="10dp"
+        android:layout_alignStart="@id/textview1"
+        android:layout_below="@+id/textview1">
+    </View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/lato_bold"
+        android:textSize="15sp"
+        android:lines="2"
+        android:layout_gravity="center_horizontal"
+        android:text="(1). Quizzer has some special rules i.e admin can only host tests and see all results.">
+
+    </TextView>
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@android:color/black"
+    android:fontFamily="@font/lato_bold"
+    android:textSize="15sp"
+    android:lines="2"
+    android:layout_gravity="center_horizontal"
+    android:text="(2). If user leaves test or pressed home button more than twice before user submits the test .">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/lato_bold"
+        android:textSize="15sp"
+        android:lines="2"
+        android:layout_gravity="center_horizontal"
+        android:text="(3). Test are automatically submitted before mentioned reasons or time runs out .">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/lato_bold"
+        android:textSize="15sp"
+        android:lines="1"
+        android:layout_gravity="center_horizontal"
+        android:text="(4). Only admins can see the results of all tests .">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/lato_bold"
+        android:textSize="15sp"
+        android:lines="1"
+        android:layout_gravity="center_horizontal"
+        android:text="(4). Admins has access to create test.">
+
+    </TextView>
+
+
+</LinearLayout>
