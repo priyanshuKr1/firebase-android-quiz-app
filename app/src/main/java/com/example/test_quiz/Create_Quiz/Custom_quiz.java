@@ -146,7 +146,7 @@ public class Custom_quiz extends AppCompatActivity {
             public void onClick(View v) {
                 if(jsonArray.length()!=0)
                 {
-                    JSONObject tempObject = new JSONObject();
+                    final JSONObject tempObject = new JSONObject();
                     // get dialog_custom.xml view
                     LayoutInflater li = LayoutInflater.from(Custom_quiz.this);
                     View promptsView = li.inflate(R.layout.dialog_custom, null);
@@ -158,26 +158,25 @@ public class Custom_quiz extends AppCompatActivity {
                     final EditText userInput =  promptsView
                             .findViewById(R.id.editTextDialogUserInput);
                     final EditText userTime = promptsView.findViewById(R.id.editTextDialogUserInput1);
-                    final String str = userTime.getText().toString();
-                    String temp2 = str;
-                    if(temp2 != null) {
-                        temp2 = String.valueOf(jsonArray.length());
-                    }
-                    Log.d("TIMEON",userTime.getText().toString().trim());
-                    try {
-                        tempObject.put("Questions",jsonArray);
-                        final String TIME = userTime.getText().toString().trim();
-                        tempObject.put("Time",Integer.parseInt(temp2));
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                    final String jsonStr = tempObject.toString();
+
                     // set dialog message
                     alertDialogBuilder
                             .setCancelable(false)
                             .setPositiveButton("OK",
                                     new DialogInterface.OnClickListener() {
                                         public void onClick(DialogInterface dialog,int id) {
+
+                                            final String str = userTime.getText().toString();
+                                            String temp2 = str;
+                                   ////  Log.d("TIMEON",userTime.getText().toString().trim());
+                                            try {
+                                                tempObject.put("Questions",jsonArray);
+                                                final String TIME = userTime.getText().toString().trim();
+                                                tempObject.put("Time",Integer.parseInt(temp2));
+                                            } catch (JSONException e) {
+                                                e.printStackTrace();
+                                            }
+                                            final String jsonStr = tempObject.toString();
                                             // get user input and set it to result
                                             // edit text
                                             if (str != null ) {
